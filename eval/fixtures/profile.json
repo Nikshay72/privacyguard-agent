@@ -1,0 +1,17 @@
+{
+  "name": "profile",
+  "description": "User profile page with personal details displayed",
+  "html": "<div><h1>My Profile</h1><p>Name: Rajesh Kumar</p><p>Email: rajesh.kumar@company.in</p><p>Phone: +91 98765 43210</p><p>Date of Birth: 15/03/1990</p><span>Address: 42 MG Road, Bangalore</span></div>",
+  "title": "Profile - Rajesh Kumar",
+  "url": "http://localhost:3000/profile/12345",
+  "ground_truth": {
+    "pii_spans": [
+      {"text": "Rajesh Kumar", "category": "PERSON"},
+      {"text": "rajesh.kumar@company.in", "category": "EMAIL"},
+      {"text": "+91 98765 43210", "category": "PHONE"},
+      {"text": "15/03/1990", "category": "DATE_OF_BIRTH"},
+      {"text": "42 MG Road, Bangalore", "category": "ADDRESS"}
+    ],
+    "sensitive_fields": []
+  }
+}

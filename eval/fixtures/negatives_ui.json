@@ -1,0 +1,16 @@
+{
+  "name": "negatives_ui",
+  "description": "UI page with non-PII elements: product prices, dates, navigation items",
+  "html": "<nav><a href='/'>Home</a><a href='/about'>About</a></nav><div><h1>Product Catalog</h1><p>Model XZ-9000 - Available since 01/01/2024</p><p>Price: $99.99</p><p>SKU: 12345678</p><button>Add to Cart</button></div>",
+  "title": "Products",
+  "url": "http://localhost:3000/products",
+  "ground_truth": {
+    "pii_spans": [],
+    "negatives": [
+      {"text": "01/01/2024", "reason": "product launch date, not DOB"},
+      {"text": "12345678", "reason": "SKU, not personal identifier"},
+      {"text": "$99.99", "reason": "price, not PII"}
+    ],
+    "sensitive_fields": []
+  }
+}

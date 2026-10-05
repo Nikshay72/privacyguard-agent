@@ -1,0 +1,14 @@
+{
+  "name": "login",
+  "description": "Standard login form with email and password",
+  "html": "<form><label for='email'>Email</label><input type='email' id='email' name='email' value='alice@example.com'/><label for='pass'>Password</label><input type='password' id='pass' name='password' value='s3cret!'/><button type='submit'>Log In</button></form>",
+  "title": "Log In",
+  "url": "http://localhost:3000/login",
+  "ground_truth": {
+    "pii_spans": [
+      {"text": "alice@example.com", "category": "EMAIL"},
+      {"text": "s3cret!", "category": "PASSWORD"}
+    ],
+    "sensitive_fields": ["email", "pass"]
+  }
+}

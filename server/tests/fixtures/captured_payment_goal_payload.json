@@ -1,0 +1,159 @@
+{
+  "context": {
+    "url": "http://localhost:3000/application.html",
+    "title": "PrivacyGuard Demo - Application",
+    "elements": [
+      {
+        "pgId": "pg-lch4ph-1",
+        "tag": "a",
+        "sanitizedText": "Login",
+        "isVisible": true,
+        "piiCategories": [],
+        "isNav": true
+      },
+      {
+        "pgId": "pg-lch4ph-2",
+        "tag": "a",
+        "sanitizedText": "Job Application",
+        "isVisible": true,
+        "piiCategories": [],
+        "isNav": true
+      },
+      {
+        "pgId": "pg-lch4ph-3",
+        "tag": "a",
+        "sanitizedText": "Payment",
+        "isVisible": true,
+        "piiCategories": [],
+        "isNav": true
+      },
+      {
+        "pgId": "pg-lch4ph-4",
+        "tag": "div",
+        "sanitizedText": "[TEXT]",
+        "isVisible": true,
+        "piiCategories": []
+      },
+      {
+        "pgId": "pg-lch4ph-5",
+        "tag": "h1",
+        "sanitizedText": "Submit Application",
+        "isVisible": true,
+        "piiCategories": []
+      },
+      {
+        "pgId": "pg-lch4ph-6",
+        "tag": "p",
+        "sanitizedText": "[TEXT]",
+        "isVisible": true,
+        "piiCategories": []
+      },
+      {
+        "pgId": "pg-lch4ph-7",
+        "tag": "form",
+        "sanitizedText": "[TEXT]",
+        "isVisible": true,
+        "piiCategories": [],
+        "inForm": true
+      },
+      {
+        "pgId": "pg-lch4ph-8",
+        "tag": "label",
+        "sanitizedText": "Full Name",
+        "isVisible": true,
+        "piiCategories": [],
+        "inForm": true
+      },
+      {
+        "pgId": "pg-lch4ph-9",
+        "tag": "input",
+        "type": "text",
+        "sanitizedText": "[PERSON_FILLED]",
+        "name": "fullName",
+        "isVisible": true,
+        "piiCategories": [
+          "PERSON"
+        ],
+        "inForm": true
+      },
+      {
+        "pgId": "pg-lch4ph-10",
+        "tag": "label",
+        "sanitizedText": "Phone Number",
+        "isVisible": true,
+        "piiCategories": [],
+        "inForm": true
+      },
+      {
+        "pgId": "pg-lch4ph-11",
+        "tag": "input",
+        "type": "tel",
+        "sanitizedText": "[PHONE_FILLED]",
+        "name": "phone",
+        "isVisible": true,
+        "piiCategories": [
+          "PHONE"
+        ],
+        "inForm": true
+      },
+      {
+        "pgId": "pg-lch4ph-12",
+        "tag": "div",
+        "sanitizedText": "[TEXT]",
+        "isVisible": true,
+        "piiCategories": [],
+        "inForm": true
+      },
+      {
+        "pgId": "pg-lch4ph-13",
+        "tag": "label",
+        "sanitizedText": "Home Address",
+        "isVisible": true,
+        "piiCategories": [],
+        "inForm": true
+      },
+      {
+        "pgId": "pg-lch4ph-14",
+        "tag": "textarea",
+        "sanitizedText": "[ADDRESS_FILLED]",
+        "name": "address",
+        "isVisible": true,
+        "piiCategories": [
+          "ADDRESS"
+        ],
+        "inForm": true
+      },
+      {
+        "pgId": "pg-lch4ph-15",
+        "tag": "label",
+        "sanitizedText": "[TEXT]",
+        "isVisible": true,
+        "piiCategories": [],
+        "inForm": true
+      },
+      {
+        "pgId": "pg-lch4ph-16",
+        "tag": "input",
+        "type": "text",
+        "sanitizedText": "[IDENTIFIER_FILLED]",
+        "name": "ssn",
+        "isVisible": true,
+        "piiCategories": [
+          "IDENTIFIER"
+        ],
+        "inForm": true
+      },
+      {
+        "pgId": "pg-lch4ph-17",
+        "tag": "button",
+        "type": "submit",
+        "sanitizedText": "Submit Application",
+        "isVisible": true,
+        "piiCategories": [],
+        "inForm": true,
+        "isSubmit": true
+      }
+    ]
+  },
+  "goal": "Go to the payment page"
+}

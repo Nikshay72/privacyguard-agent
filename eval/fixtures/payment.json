@@ -1,0 +1,16 @@
+{
+  "name": "payment",
+  "description": "Payment form with credit card and CVV",
+  "html": "<form><label for='cardholder'>Name on Card</label><input type='text' id='cardholder' name='name' value='Alice Smith'/><label for='cc'>Card Number</label><input type='text' id='cc' name='card' autocomplete='cc-number' value='4111-1111-1111-1111'/><label for='cvv'>CVV</label><input type='text' id='cvv' name='cvv' value='123'/><label for='exp'>Expiry</label><input type='text' id='exp' name='expiry' value='12/28'/><button type='submit'>Pay Now</button></form>",
+  "title": "Payment",
+  "url": "http://localhost:3000/checkout/pay",
+  "ground_truth": {
+    "pii_spans": [
+      {"text": "Alice Smith", "category": "PERSON"},
+      {"text": "4111-1111-1111-1111", "category": "CREDIT_CARD"},
+      {"text": "123", "category": "PASSWORD"},
+      {"text": "12/28", "category": "DATE_OF_BIRTH"}
+    ],
+    "sensitive_fields": ["cardholder", "cc", "cvv", "exp"]
+  }
+}

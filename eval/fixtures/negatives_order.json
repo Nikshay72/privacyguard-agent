@@ -1,0 +1,16 @@
+{
+  "name": "negatives_order",
+  "description": "Order confirmation page with tricky negatives: order numbers that look like phone numbers, public support email, card-like number that fails Luhn",
+  "html": "<div><h2>Order Confirmation</h2><p>Order Number: 9876543210</p><p>Tracking ID: 1234-5678-9012-3456</p><p>For support, email support@company.com</p><p>Thank you for your purchase!</p></div>",
+  "title": "Order Confirmation",
+  "url": "http://localhost:3000/order/confirmation",
+  "ground_truth": {
+    "pii_spans": [],
+    "negatives": [
+      {"text": "9876543210", "reason": "order number, not a phone number"},
+      {"text": "1234-5678-9012-3456", "reason": "tracking ID fails Luhn, not a real card"},
+      {"text": "support@company.com", "reason": "public support email, not personal PII"}
+    ],
+    "sensitive_fields": []
+  }
+}

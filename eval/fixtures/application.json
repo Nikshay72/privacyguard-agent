@@ -1,0 +1,16 @@
+{
+  "name": "application",
+  "description": "Application form with text inputs for personal data",
+  "html": "<form><label for='fullname'>Full Name</label><input type='text' id='fullname' name='name' value='Priya Sharma'/><label for='email'>Email</label><input type='email' id='email' name='email' value='priya@gmail.com'/><label for='phone'>Mobile Number</label><input type='tel' id='phone' name='mobile' value='9876543210'/><label for='addr'>Street Address</label><input type='text' id='addr' name='address' value='221B Baker Street'/><button type='submit'>Submit Application</button></form>",
+  "title": "Application Form",
+  "url": "http://localhost:3000/apply",
+  "ground_truth": {
+    "pii_spans": [
+      {"text": "Priya Sharma", "category": "PERSON"},
+      {"text": "priya@gmail.com", "category": "EMAIL"},
+      {"text": "9876543210", "category": "PHONE"},
+      {"text": "221B Baker Street", "category": "ADDRESS"}
+    ],
+    "sensitive_fields": ["fullname", "email", "phone", "addr"]
+  }
+}

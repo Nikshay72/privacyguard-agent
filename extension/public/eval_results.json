@@ -1,0 +1,38 @@
+{
+  "visual_context_accuracy": null,
+  "pii_metrics": {
+    "precision": 1,
+    "recall": 1,
+    "f1": 1,
+    "categories": {}
+  },
+  "redaction_precision": {
+    "correct": 4,
+    "over_redacted": 0,
+    "missed": 0
+  },
+  "resource_usage": {
+    "ram_mb": 87,
+    "cpu_percent": null,
+    "gpu_status": "N/A",
+    "inference_time_ms": 0
+  },
+  "latency": {
+    "total_median": 16.930499999999938,
+    "total_p95": 34.085099999999784,
+    "per_stage": {
+      "scan": {
+        "median": 15.558700000000044,
+        "p95": 23.448399999999765
+      },
+      "sanitize": {
+        "median": 0.10069999999996071,
+        "p95": 0.20049999999991996
+      },
+      "server_llm": {
+        "median": 1.4364999999997963,
+        "p95": 6.824500000000171
+      }
+    }
+  }
+}

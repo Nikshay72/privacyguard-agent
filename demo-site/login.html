@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PrivacyGuard Demo - Login</title>
+    <style>
+        body { font-family: system-ui; max-width: 800px; margin: 40px auto; padding: 0 20px; }
+        .card { border: 1px solid #ccc; padding: 20px; border-radius: 8px; }
+        .field { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: 500; }
+        input { width: 100%; padding: 8px; box-sizing: border-box; }
+        button { background: #2563eb; color: white; border: none; padding: 10px 15px; border-radius: 4px; cursor: pointer; }
+        nav { margin-bottom: 20px; }
+        nav a { margin-right: 15px; color: #2563eb; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="login.html">Login</a>
+        <a href="application.html">Job Application</a>
+        <a href="payment.html">Payment</a>
+    </nav>
+    <div class="card">
+        <h1>Login to AcmeCorp</h1>
+        <form id="login-form">
+            <div class="field">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" value="alice.smith@example.com">
+            </div>
+            <div class="field">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" value="SuperSecretPassword123!">
+            </div>
+            <button type="submit">Sign In</button>
+        </form>
+        <p>Forgot your password? <a href="#">Reset here</a>.</p>
+    </div>
+</body>
+</html>

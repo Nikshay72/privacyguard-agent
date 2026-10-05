@@ -1,0 +1,8 @@
+{
+  "groundTruth": [
+    { "value": "Alice Smith", "category": "PERSON" },
+    { "value": "4111-2222-3333-4444", "category": "CREDIT_CARD" },
+    { "value": "alice.smith@example.com", "category": "EMAIL" },
+    { "value": "1800-555-1234", "category": "PHONE" }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "n": 20,
+  "pii_metrics": {
+    "tp": 20,
+    "fp": 8,
+    "fn": 0,
+    "tn": 0,
+    "precision": 0.7143,
+    "recall": 1,
+    "f1": 0.8333,
+    "byCategory": {
+      "PERSON": {
+        "tp": 5,
+        "fp": 0,
+        "fn": 0
+      },
+      "EMAIL": {
+        "tp": 4,
+        "fp": 0,
+        "fn": 0
+      },
+      "PHONE": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0
+      },
+      "ADDRESS": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0
+      },
+      "PASSWORD": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0
+      },
+      "CREDIT_CARD": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0
+      },
+      "DATE_OF_BIRTH": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0
+      },
+      "IDENTIFIER": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0
+      }
+    }
+  },
+  "redaction": {
+    "correctlyRedacted": 20,
+    "overRedacted": 8,
+    "missed": 0
+  },
+  "latency": {
+    "median_ms": 20.32,
+    "p95_ms": 40.5,
+    "samples": [
+      {
+        "fixture": "application",
+        "scanMs": 393.08219999999983,
+        "sanitizeMs": 2.309400000000096,
+        "wireMs": 1.2346999999999753,
+        "totalMs": 396.6262999999999
+      },
+      {
+        "fixture": "login",
+        "scanMs": 27.160100000000057,
+        "sanitizeMs": 0.0955999999996493,
+        "wireMs": 0.10260000000016589,
+        "totalMs": 27.358299999999872
+      },
+      {
+        "fixture": "mixed_content",
+        "scanMs": 33.26800000000003,
+        "sanitizeMs": 0.12640000000010332,
+        "wireMs": 0.07890000000043074,
+        "totalMs": 33.47330000000056
+      },
+      {
+        "fixture": "negatives_order",
+        "scanMs": 21.89719999999943,
+        "sanitizeMs": 0.1190999999998894,
+        "wireMs": 0.11050000000068394,
+        "totalMs": 22.126800000000003
+      },
+      {
+        "fixture": "negatives_ui",
+        "scanMs": 23.86580000000049,
+        "sanitizeMs": 0.15599999999994907,
+        "wireMs": 0.09509999999954744,
+        "totalMs": 24.116899999999987
+      },
+      {
+        "fixture": "payment",
+        "scanMs": 35.102499999999964,
+        "sanitizeMs": 0.2098999999998341,
+        "wireMs": 0.14550000000053842,
+        "totalMs": 35.457900000000336
+      },
+      {
+        "fixture": "profile",
+        "scanMs": 15.40480000000025,
+        "sanitizeMs": 0.13730000000032305,
+        "wireMs": 0.06419999999980064,
+        "totalMs": 15.606300000000374
+      },
+      {
+        "fixture": "registration",
+        "scanMs": 21.33010000000013,
+        "sanitizeMs": 0.10829999999987194,
+        "wireMs": 0.05040000000008149,
+        "totalMs": 21.488800000000083
+      }
+    ]
+  }
+}

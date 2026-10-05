@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "PrivacyGuard",
+  "version": "0.1.0",
+  "description": "Local-first privacy firewall for AI browser agents",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "offscreen"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "src/background/background.ts",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/content/content.ts"]
+    }
+  ],
+  "action": {
+    "default_popup": "index.html"
+  }
+}

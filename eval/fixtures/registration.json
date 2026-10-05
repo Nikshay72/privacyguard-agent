@@ -1,0 +1,16 @@
+{
+  "name": "registration",
+  "description": "Registration page with SSN and date of birth",
+  "html": "<form><label for='name'>Full Name</label><input type='text' id='name' name='name' value='Nikshay Soni'/><label for='ssn'>SSN</label><input type='text' id='ssn' name='ssn' value='123-45-6789'/><label for='dob'>Date of Birth</label><input type='text' id='dob' name='dob' value='25/12/1998'/><label for='email'>Email</label><input type='email' id='email' name='email' value='nikshay@test.com'/><button type='submit'>Register</button></form>",
+  "title": "Registration - Nikshay Soni",
+  "url": "http://localhost:3000/register",
+  "ground_truth": {
+    "pii_spans": [
+      {"text": "Nikshay Soni", "category": "PERSON"},
+      {"text": "123-45-6789", "category": "IDENTIFIER"},
+      {"text": "25/12/1998", "category": "DATE_OF_BIRTH"},
+      {"text": "nikshay@test.com", "category": "EMAIL"}
+    ],
+    "sensitive_fields": ["name", "ssn", "dob", "email"]
+  }
+}
